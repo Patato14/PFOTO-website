@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+ 
+.clearfix:after {
+    display:block;
+    clear:both;
+}
+ 
+/*----- Menu Outline -----*/
+.menu-wrap {
+margin: 0px;
+padding: 0px;
+Background-color: gray;
+position: fixed;
+top: 0;
+width: 100%;
+color: black;
+}
+ 
+.menu {
+    width: 1000px;
+    margin: 0px;
+}
+ 
+.menu li {
+    margin:0px;
+    list-style:none;
+    font-family:'arial';
+}
+ 
+.menu a {  
+    
+    color: white;
+}
+ 
+.menu li:hover > a, .menu .current-item > a {
+    background-color: gray;
+color: black;
+}
+ 
+.menu .arrow {
+    font-size:0px;
+    line-height:0%;
+}
+ 
+/*----- Top Level -----*/
+.menu > ul > li {
+    float:left;
+    position:relative;
+    font-size:15px;
+}
+ 
+.menu > ul > li > a {
+    padding: 0px 30px;
+    display:inline-block;
+   text-shadow:0px 0px 0px black;
+}
+ 
+.menu > ul > li:hover > a, .menu > ul > .current-item > a {
+    background:white;
+}
+ 
+/*----- Bottom Level -----*/
+.menu li:hover .sub-menu {
+    z-index:1;
+    opacity:1;
+}
+ 
+.sub-menu {
+    width:100%;
+    padding:5px 0px;
+    position:absolute;
+    top:100%;
+    left:0px;
+    z-index:-1;
+    opacity:0;
+    transition:opacity linear 0.15s;
+    box-shadow:0px 0px 0px rgba(0,0,0,0);
+    background:gray;
+}
+ 
+.sub-menu li {
+    display:block;
+    font-size:14px;
+}
+ 
+.sub-menu li a {
+    padding:10px 10px;
+    display:block;
+}
+ 
+.sub-menu li a:hover, .sub-menu .current-item a {
+    background:gray;
+}
+p {
+margin: 50px;
+}
+footer {
+padding: 0px;
+margin: 0px;
+}
+</style>
+</head>
+<body>
+<div class="menu-wrap">
+    <nav class="menu">
+        <ul class="clearfix">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Community<span class="arrow">&#9660;</span></a>
+                <ul class="sub-menu">
+                    <li><a href="#">Clan forums</a></li>
+                    <li><a href="http://forum.wotblitz.com/">Official NA WoTB forums</a></li>
+                    <li><a href="#">Clan material</a></li>
+                    <li><a href="#">Clan chat</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Schedule<span class="arrow">&#9660;</span></a>
+<ul class="sub-menu">
+<li><a href="#">Platoon schedule</a></li>
+<li><a href="#">Event schedule</a></li>
+</ul>
+</li>
+            <li><a href="#">Potential Members</a></li>
+<li><a href="#a source">Announcements</a></li>
+        </ul>
+    </nav>
+</div>
+<p>
+oops, you have entered a page that hasn't been completed please go back and try a different page. If this happens with every page then email me at ( <strong>pfoto.email@gmail.com</strong> ) to report the problem.
+</p>
+</body></html>
